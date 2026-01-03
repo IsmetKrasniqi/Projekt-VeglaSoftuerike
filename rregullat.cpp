@@ -1,3 +1,4 @@
+#include <iostream>
 #include "paga.h"
 
 const int MAKS_ORET_NE_MUAJ = 176;
@@ -5,6 +6,7 @@ const int MAKS_ORET_NE_MUAJ = 176;
 float llogaritZbritjen(int ore, float paga)
 {
     if (ore < 0 || paga < 0) {
+        std::cout << "Nuk mund te shenoni ore apo page negative!" << std::endl;
         return 0;
     }
     if (ore < MAKS_ORET_NE_MUAJ) {
