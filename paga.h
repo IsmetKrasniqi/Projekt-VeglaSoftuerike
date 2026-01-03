@@ -1,7 +1,7 @@
 #ifndef PAGA_H
 #define PAGA_H
 
-extern const int MAKS_ORET_NE_MUAJ;
+const int MAKS_ORET_NE_MUAJ = 160;
 
 float llogaritZbritjen(int ore, float paga);
 void shfaqMesazhin(int ore);
