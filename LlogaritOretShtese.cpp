@@ -18,3 +18,10 @@ cout << "Ju keni "
 << " ore me pak se plani mujor." << endl;
 }
 }
+double llogaritBonusin(int ore) {
+    const double PAGESA_PER_ORE_SHTESE = 10.5; 
+    if (ore > MAKS_ORET_NE_MUAJ) {
+        return (ore - MAKS_ORET_NE_MUAJ) * PAGESA_PER_ORE_SHTESE;
+    }
+    return 0.0;
+}
