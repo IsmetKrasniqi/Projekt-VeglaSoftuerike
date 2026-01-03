@@ -3,6 +3,15 @@
 
 using namespace std;
 
+float llogaritZbritjen(int ore, float paga)
+{
+    if (ore < MAKS_ORET_NE_MUAJ) {
+        float perqindjaRealizimit = 1 - (ore / (float)MAKS_ORET_NE_MUAJ);
+        return perqindjaRealizimit * paga;
+    }
+    return 0;
+}
+
 void shfaqRezultatin(float paga, float pagaZbritur)
 {
     if (pagaZbritur > 0) {
